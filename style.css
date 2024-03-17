@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.introductory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elephant {
+  flex: 2;
+}
+
+.elephant-2 {
+  flex: 1;
+  text-align: center;
+  /* to center the button */
+}
+
+.elephant-2 p {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2%;
+}
+
+.elephant-2 button {
+  padding: 10px 20px;
+}
+
+.introductory-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cow {
+  flex: 1;
+}
+
+.cow p {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 2%;
+}
+
+/* @media (max-width: 600px) {
+  .cow p {
+    font-size: 1.2rem;
+  }
+} */
+
+.cow-2 {
+  flex: 2;
+}
+
+.message {
+  padding: 2.5%;
+}
+
+.message p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* @media (max-width: 600px) {
+  .message p {
+    font-size: 1.5rem;
+  }
+} */
+
+.navbar {
+  background-color: rgb(190, 252, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.site-title {
+  font-size: 2rem;
+  padding: 0.5%;
+}
+
+.menu {
+  font-size: 1rem;
+  padding: 0.5%;
+}
+
+.menu a {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact p {
+  padding: 7%;
+  font-size: 1.5rem;
+}
+
+.image-stack {
+  display: flex;
+  padding: 2%;
+}
+
+img {
+  width: 100%;
+}
+
+.img-box-1,
+.img-box-2,
+.img-box-3 {
+  margin: 0.5%;
+
+  object-fit: cover;
+}
+
+.quote {
+  padding: 2.5%;
+  /* background-color: rgb(227, 254, 255); */
+}
+
+.para {
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+/* @media (max-width: 600px) {
+  .para {
+    font-size: 1.5rem;
+  }
+} */
+
+.writer {
+  font-size: 1.5rem;
+  text-align: end;
+}
+
+/* @media (max-width: 600px) {
+  .writer {
+    font-size: 1rem;
+  }
+} */
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  /* margin: 2.5%; */
+}
+
+.sign-msg {
+  flex: 3;
+  /* background-color: antiquewhite; */
+  margin-top: 1.5%;
+}
+
+.sign-msg {
+  font-size: 1.2rem;
+}
+
+.action-call {
+  font-size: 0.9rem;
+}
+
+/* @media (max-width: 600px) {
+  .sign-msg {
+    font-size: 1rem;
+  }
+} */
+
+.sign-button {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* to center the button */
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+}
+
+.newsletter {
+  font-size: 1rem;
+}
+
+.navbar-bottom {
+  background-color: rgb(190, 252, 255);
+  text-align: center;
+  padding: 1.5%;
+}
+
+.navbar-bottom p {
+  padding: 1%;
+  font-weight: 400;
+}
+
+#button {
+  cursor: pointer;
+  margin: 2%;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#button-2 {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  margin-top: 5%;
+}
+
+button {
+  background-color: rgb(190, 252, 255);
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(145, 250, 255);
+  color: rgb(126, 127, 128);
+}
+
+.navbar a:hover {
+  color: rgb(126, 127, 128);
+}
+
+.about {
+  height: 150%;
+}
+
+.about p {
+  padding: 15%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------- */
+
+.popup-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(red, green, blue, 0.5);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------ */
+
+@media screen and (max-width: 600px) {
+  div {
+    flex-direction: column;
+  }
+
+  .cow p {
+    font-size: 1.2rem;
+  }
+  .message p {
+    font-size: 1.5rem;
+  }
+  .para {
+    font-size: 1.5rem;
+  }
+  .writer {
+    font-size: 1rem;
+  }
+  .sign-msg {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .about p {
+    font-size: 1.2rem;
+  }
+}
+
+/* media query should be in the last */
